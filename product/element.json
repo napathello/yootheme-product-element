@@ -1,0 +1,259 @@
+{
+    "@import": "./element.php",
+    "name": "product",
+    "title": "Product",
+    "icon": "${url:images/icon.svg}",
+    "iconSmall": "${url:images/iconSmall.svg}",
+    "element": true,
+    "container": true,
+    "width": 500,
+    "defaults": {
+        "field_product_cart": 0,
+        "field_product_ratting": 1,
+        "field_product_slider": 0,
+        "field_product_number": 4,
+        "field_product_type": "latest",
+        "field_product_orderby": "date",
+        "field_product_order": "DESC",
+        "field_grid_default": 4
+    },
+    "templates": {
+        "render": "./templates/template.php"
+    },
+    "fields": {
+
+        "field_product_cart": {
+            "label": "Cart Display",
+            "description": "Select hide and show Cart Display",
+            "type": "select",
+            "options": {
+                "Hide": 0,
+                "Show": 1
+            }
+        },
+
+        "field_product_ratting": {
+            "label": "Ratting Display",
+            "description": "Select hide and show Ratting Display",
+            "type": "select",
+            "options": {
+                "Hide": 0,
+                "Show": 1
+            }
+        },
+
+        "field_product_slider": {
+            "label": "Slider Enable",
+            "description": "Select use slider on product",
+            "type": "select",
+            "options": {
+                "No": 0,
+                "Yes": 1
+            }
+        },
+
+        "field_product_number": {
+            "label": "Number of product",
+            "type": "number"
+        },
+
+        "field_product_type": {
+            "type": "select",
+            "label": "Product type",
+            "options": {
+                "Latest Products": "latest",
+                "Featured Products": "featured",
+                "By Product Categories": "category",
+                "By Product Tags": "tags",
+                "By Product IDs": "id"
+            }
+        },
+
+        "field_product_category": {
+            "type": "text",
+            "label": "Product Categories",
+            "description": "Comma separated product category ids."
+        },
+
+        "field_product_tag": {
+            "type": "text",
+            "label": "Product Tags",
+            "description": "Comma separated product tags ids."
+        },
+
+        "field_product_id": {
+            "type": "text",
+            "label": "Product IDs",
+            "description": "Comma separated product product ids."
+        },
+
+        "field_product_orderby": {
+            "type": "select",
+            "label": "Products Orderby",
+            "options": {
+                "None": "",
+                "ID": "ID",
+                "Author": "author",
+                "Title": "title",
+                "Name": "name",
+                "Date": "date",
+                "Rand": "rand"
+            }
+        },
+
+        "field_product_order": {
+            "type": "select",
+            "label": "Products order",
+            "options": {
+                "Ascending": "ASC",
+                "Descending": "DESC"
+            }
+        },
+
+        "field_grid_default": {
+            "type": "select",
+            "label": "Grid for Phone Portrait",
+            "description": "Set the number of grid columns for each breakpoint. <i>Inherit</i> refers to the number of columns on the next smaller screen size.",
+            "options": {
+                "Inherit": "",
+                "Column 1": "1",
+                "Column 2": "2",
+                "Column 3": "3",
+                "Column 4": "4",
+                "Column 5": "5",
+                "Column 6": "6"
+            }
+        },
+
+        "field_grid_small": {
+            "type": "select",
+            "label": "Grid for Phone Landscape",
+            "description": "Set the number of grid columns for each breakpoint. <i>Inherit</i> refers to the number of columns on the next smaller screen size.",
+            "options": {
+                "Inherit": "",
+                "Column 1": "1",
+                "Column 2": "2",
+                "Column 3": "3",
+                "Column 4": "4",
+                "Column 5": "5",
+                "Column 6": "6"
+            }
+        },
+
+        "field_grid_medium": {
+            "type": "select",
+            "label": "Grid for Tablet Landscapee",
+            "description": "Set the number of grid columns for each breakpoint. <i>Inherit</i> refers to the number of columns on the next smaller screen size.",
+            "options": {
+                "Inherit": "",
+                "Column 1": "1",
+                "Column 2": "2",
+                "Column 3": "3",
+                "Column 4": "4",
+                "Column 5": "5",
+                "Column 6": "6"
+            }
+        },
+
+        "field_grid_large": {
+            "type": "select",
+            "label": "Grid for Desktop",
+            "description": "Set the number of grid columns for each breakpoint. <i>Inherit</i> refers to the number of columns on the next smaller screen size.",
+            "options": {
+                "Inherit": "",
+                "Column 1": "1",
+                "Column 2": "2",
+                "Column 3": "3",
+                "Column 4": "4",
+                "Column 5": "5",
+                "Column 6": "6"
+            }
+        },
+
+        "field_grid_xlarge": {
+            "type": "select",
+            "label": "Grid for Large Screens",
+            "description": "Set the number of grid columns for each breakpoint. <i>Inherit</i> refers to the number of columns on the next smaller screen size.",
+            "options": {
+                "Inherit": "",
+                "Column 1": "1",
+                "Column 2": "2",
+                "Column 3": "3",
+                "Column 4": "4",
+                "Column 5": "5",
+                "Column 6": "6"
+            }
+        },
+
+        "name": "${builder:name}",
+        "status": "${builder:status}",
+        "id": "${builder:id}",
+        "class": "${builder:cls}",
+        "css": {
+            "label": "CSS",
+            "description": "Enter your own custom CSS. The following selectors will be prefixed automatically for this element: <code>.el-element</code>, <code>.el-item</code>, <code>.el-title</code>, <code>.el-meta</code>, <code>.el-content</code>, <code>.el-image</code>, <code>.el-link</code>",
+            "type": "editor",
+            "editor": "code",
+            "mode": "css",
+            "attrs": {
+                "debounce": 500
+            }
+        }
+
+    },
+    "fieldset": {
+        "default": {
+            "type": "tabs",
+            "fields": [
+                {
+                    "title": "Content",
+                    "fields": [
+
+                      {
+                          "label": "Product Data",
+                          "type": "group",
+                          "divider": true,
+                          "fields": [
+                              "field_product_number",
+                              "field_product_type",
+                              "field_product_category",
+                              "field_product_orderby",
+                              "field_product_order"
+                          ]
+                      },
+                      {
+                          "label": "Grid",
+                          "type": "group",
+                          "divider": true,
+                          "fields": [
+                            "field_grid_default",
+                            "field_grid_small",
+                            "field_grid_medium",
+                            "field_grid_large",
+                            "field_grid_xlarge"
+                          ]
+                      }
+
+                    ]
+
+                },
+                {
+                    "title": "Setting",
+                    "fields": [
+                      {
+                          "label": "Main Setting",
+                          "type": "group",
+                          "divider": true,
+                          "fields": [
+                            "field_product_cart",
+                            "field_product_ratting",
+                            "field_product_slider"
+                          ]
+                      }
+                    ]
+                },
+                "${builder:advanced}"
+            ]
+        }
+    }
+}

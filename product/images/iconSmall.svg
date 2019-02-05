@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cart" transform="translate(3.000000, 5.000000)">
+            <circle id="Oval" fill="#000000" cx="10" cy="21" r="2"></circle>
+            <circle id="Oval" fill="#000000" cx="18" cy="21" r="2"></circle>
+            <polyline id="Path" stroke="#000000" points="0 0 4.26666667 2.66666667 7.06666667 14 21.3333333 14 24 6 10.6666667 6"></polyline>
+        </g>
+    </g>
+</svg>
