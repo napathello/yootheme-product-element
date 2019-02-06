@@ -217,6 +217,8 @@
                               "field_product_number",
                               "field_product_type",
                               "field_product_category",
+                              "field_product_tag",
+                              "field_product_id",
                               "field_product_orderby",
                               "field_product_order"
                           ]
